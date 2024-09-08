@@ -1,0 +1,15 @@
+{
+  "name": "odin_homepage",
+  "version": "1.0.0",
+  "description": "Homepage project from THE ODIN PROJECT",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
