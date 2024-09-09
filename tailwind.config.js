@@ -13,8 +13,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        Playfair: ['Playfair Display', serif],
-        Roboto: ['Roboto', sans - serif],
+        Playfair: ['Playfair Display', 'serif'],
+        Roboto: ['Roboto', 'sans - serif'],
       },
     },
   },

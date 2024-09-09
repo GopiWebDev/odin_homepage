@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -554,7 +554,29 @@ video {
   --tw-contain-style:  ;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.wrapper {
+  min-width: calc(100% - 100px,1400px);
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 162 210 / var(--tw-bg-opacity));
+}
+
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(94 143 77 / var(--tw-bg-opacity));
 }
