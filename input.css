@@ -3,11 +3,36 @@
 @tailwind utilities;
 
 @layer components {
-  svg {
-    @apply h-6 w-6;
+  * {
+    @apply box-border;
   }
 
-  .wrapper {
-    @apply min-w-[calc(100%-100px,1400px)];
+  svg {
+    @apply w-[30px] hover:cursor-pointer;
   }
+}
+
+main {
+  background: linear-gradient(167deg, #03a3b3 66%, transparent 40%);
+}
+
+.kaka {
+  color: white;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
+  gap: 40px;
+}
+
+.battles {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.battle {
+  height: 100px;
+  width: 200px;
+  border: 2px solid red;
 }

@@ -12,6 +12,12 @@ module.exports = {
       blue: '#4BA2D2',
     },
     extend: {
+      boxShadow: {
+        custom: '0px 0px 15px 0px rgba(0, 0, 0, 0.75)',
+      },
+      backgroundImage: {
+        main: "url('./images/kakashi.jpg')",
+      },
       fontFamily: {
         Playfair: ['Playfair Display', 'serif'],
         Roboto: ['Roboto', 'sans - serif'],
