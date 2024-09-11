@@ -12,6 +12,9 @@ module.exports = {
       blue: '#4BA2D2',
     },
     extend: {
+      gridTemplateColumns: {
+        custCol: 'repeat(3, minmax(300px, 1fr))',
+      },
       boxShadow: {
         custom: '0px 0px 15px 0px rgba(0, 0, 0, 0.75)',
       },
