@@ -34,6 +34,15 @@
   .info p {
     @apply font-serif;
   }
+
+  .contact p {
+    @apply text-[24px];
+  }
+
+  .contact .phone svg,
+  .contact .email svg {
+    @apply inline mr-4 fill-[#fff];
+  }
 }
 
 main {
@@ -42,49 +51,4 @@ main {
 
 .kaka {
   color: white;
-}
-
-footer {
-  background-color: #03a3b3;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 3rem 5rem;
-}
-.container {
-  width: 100%;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.contact {
-  width: 50%;
-  height: 100%;
-  padding: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.contact h2 {
-  font-size: 40px;
-}
-
-.contact p {
-  font-size: 24px;
-}
-
-.contact .address {
-  font-size: 20px;
-}
-
-.contact .phone svg,
-.contact .email svg {
-  display: inline;
-}
-
-.footer-image {
-  width: 50%;
 }
