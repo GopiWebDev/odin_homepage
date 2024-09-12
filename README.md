@@ -2,4 +2,4 @@
 
 Homepage project from THE ODIN PROJECT using Tailwindcss
 
-Live link: https://gopiwebdev.github.io/odin_homepage/
+Live link: https://odin-homepage-one.vercel.app/
