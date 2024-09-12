@@ -4,7 +4,7 @@
   "description": "Homepage project from THE ODIN PROJECT",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./assets/css/input.css -o ./style.css --watch"
+    "build": "npx tailwindcss -i ./assets/css/input.css -o ./style.css"
   },
   "keywords": [],
   "author": "",
