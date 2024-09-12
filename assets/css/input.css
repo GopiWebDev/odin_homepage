@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply font-Bebas font-[500];
+  }
+
+  body {
+    @apply bg-[#F9F6EE];
+  }
+
+  h2 {
+    @apply text-[50px];
+  }
+
+  .header {
+    @apply relative m-auto;
+  }
+
+  .bg-wrapper {
+    @apply w-full h-full absolute top-0 left-0 -z-[1] origin-[0] -skew-y-[10deg] bg-[#45d1f7] shadow-custom;
+  }
+
+  .header .wrapper {
+    @apply flex items-center justify-center p-[50px];
+  }
+
+  .header .img-wrapper {
+    @apply relative overflow-hidden shadow-custom w-[min(100%-20px,400px)];
+  }
+
+  .header .img-wrapper img {
+    @apply w-full block;
+  }
+
+  .img-wrapper h1 {
+    @apply absolute bottom-3 left-0 w-full text-center text-[#fff] text-[40px] z-[2];
+  }
+
+  .header .img-wrapper::after {
+    @apply content-[""] block w-[150%] h-[150%] rounded-[50%] absolute -top-[25%] -left-[25%];
+  }
+
+  .about {
+    @apply w-[min(100vw-40px,600px)] p-5 shadow-custom bg-[#fff];
+  }
+
+  .about h2 {
+    @apply mb-5;
+  }
+
+  .social-icons {
+    @apply flex gap-5 justify-end mt-5;
+  }
+
+  a.fa {
+    @apply text-black text-4xl no-underline;
+  }
+
+  /* Main */
+
+  .battle-section .wrapper {
+    @apply w-[min(100%-100px,1400px)];
+  }
+
+  .battle-section h2 {
+    @apply mb-[35px];
+  }
+
+  .battles {
+    @apply grid grid-cols-custom gap-10;
+  }
+
+  .battle {
+    @apply shadow-custom;
+  }
+
+  .battle img {
+    @apply w-full h-[250px] object-cover block;
+  }
+
+  .info {
+    @apply p-3 bg-[#fff];
+  }
+
+  .info .title {
+    @apply flex justify-between;
+  }
+
+  .info h3 {
+    @apply text-2xl mb-2;
+  }
+
+  .info a {
+    @apply text-2xl;
+  }
+
+  .info p {
+    @apply text-lg;
+  }
+
+  .footer {
+    @apply bg-blue-700 text-[#fff];
+  }
+
+  .footer .wrapper {
+    @apply flex justify-center;
+  }
+
+  .footer .wrapper > * {
+    @apply py-[60px] px-10;
+  }
+
+  .social-icons.footer-icons {
+    @apply text-black justify-start;
+  }
+
+  .contact p,
+  .contact h2 {
+    @apply mb-4;
+  }
+
+  .footer .img-wrapper {
+    @apply w-[min(100vw-20px,550px)];
+  }
+
+  .footer img {
+    @apply block w-full m-auto object-cover aspect-[4/3];
+  }
+
+  @media (max-width: 1100px) {
+    .img-wrapper h1 {
+      @apply text-5xl text-left left-4;
+    }
+
+    .about {
+      @apply m-auto;
+    }
+
+    .footer .wrapper {
+      @apply items-center flex-col;
+    }
+
+    .contact {
+      @apply text-center;
+    }
+
+    .social-icons.footer-icons {
+      @apply justify-center;
+    }
+
+    .footer .img-wrapper {
+      @apply w-[calc(100vw-40px)];
+    }
+  }
+
+  @media (min-width: 800px) and (max-width: 1100px) {
+    .header .wrapper {
+      @apply block;
+    }
+
+    .header .img-wrapper {
+      @apply w-[350px] h-[350px] float-left mr-[1rem];
+    }
+
+    .about {
+      @apply mt-[60px] w-[min(100vw-40px,650px)];
+    }
+  }
+
+  @media (max-width: 800px) {
+    .header .wrapper {
+      @apply flex flex-col gap-5;
+    }
+
+    .about {
+      @apply m-0;
+    }
+  }
+}
+
+.battle-section .wrapper {
+  margin-inline: auto;
+  margin-block: 80px;
+}
